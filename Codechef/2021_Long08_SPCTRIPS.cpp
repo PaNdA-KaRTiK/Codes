@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
     int T;
-    cin >> T;
+    cin>>T;
 
     while (T--){
         int n, total = 0;
@@ -15,12 +15,12 @@ int main(){
                 if (j % i == 0){
                     for (int k = i; k <= n; k += j){
                         if (k % j == i)
-                            count++;
+                            total++;
                     }
                 }
             }
         }
-        cout << count << endl;
+        cout<<total<<endl;
     }
     return 0;
 }
